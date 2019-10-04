@@ -1,0 +1,23 @@
+<resources>
+    <string name="title_activity_map">Map</string>
+    <string name="pref_file">com.abc.preference_file</string>
+    <string name="pref_login_status">com.abc.preference_login_status</string>
+    <string name="pref_user_name">com.abc.preference_user_name</string>
+    <string name="title_activity_map_search">Map Search</string>
+    <string name="title_activity_view_directions">Directions</string>
+
+    <string name="text_day_time">Day:</string>
+    <string name="text_night_time">Night:</string>
+    <string name="text_humidity">Humidity:</string>
+    <string name="text_pressure">Pressure:</string>
+    <string name="text_weather_condition">Weather condition:</string>
+    <string name="text_clouds">Cloud:</string>
+    <string name="title_notification">Location Changed</string>
+    <string name="message_notification">Current Coordinates:</string>
+
+    <string-array name="temp_options">
+        <item>Day</item>
+        <item>Night</item>
+    </string-array>
+    <string name="app_name">Explore</string>
+</resources>

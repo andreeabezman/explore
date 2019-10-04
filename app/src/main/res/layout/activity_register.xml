@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/clContainerReg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login_edited"
+    tools:context=".View.MainActivity">
+    <TextView
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/quantum_bluegrey950"
+        android:textStyle="bold"
+        android:text="Create an account"
+        android:id="@+id/tvWelcomeReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeReg"
+        android:textColor="@color/quantum_bluegrey950"
+        android:textStyle="bold"
+        android:id="@+id/tvRegMessage"
+        android:text="Register and start searching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCredentials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/ivUser"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:tint="@color/quantum_bluegrey600"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivPassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_lock_outline_black_24dp"
+                android:tint="@color/quantum_bluegrey600"
+                app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+                app:layout_constraintStart_toStartOf="@+id/ivUser"
+                app:layout_constraintTop_toTopOf="@+id/etPassword" />
+
+            <ImageView
+                android:id="@+id/ivMail"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_message_black_24dp"
+                android:tint="@color/quantum_bluegrey600"
+                app:layout_constraintBottom_toBottomOf="@+id/etMail"
+                app:layout_constraintStart_toStartOf="@id/ivPassword"
+                app:layout_constraintTop_toTopOf="@+id/etMail" />
+
+            <ImageView
+                android:id="@+id/ivBirth"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_cake_black_24dp"
+                android:tint="@color/quantum_bluegrey600"
+                app:layout_constraintBottom_toBottomOf="@+id/etBirth"
+                app:layout_constraintStart_toStartOf="@id/ivMail"
+                app:layout_constraintTop_toBottomOf="@+id/etCity" />
+
+            <ImageView
+                android:id="@+id/ivCity"
+                android:layout_width="27dp"
+                android:layout_height="29dp"
+                android:src="@drawable/ic_location_city_black_24dp"
+                android:tint="@color/quantum_bluegrey600"
+                app:layout_constraintBottom_toBottomOf="@+id/etCity"
+                app:layout_constraintStart_toStartOf="@id/ivBirth"
+                app:layout_constraintTop_toTopOf="@+id/etCity" />
+
+            <EditText
+
+                android:id="@+id/etUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:hint="Username"
+                app:layout_constraintBottom_toBottomOf="@+id/ivUser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.541"
+                app:layout_constraintStart_toEndOf="@id/ivUser"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/etUser"
+                app:layout_constraintTop_toBottomOf="@+id/etUser" />
+
+            <EditText
+                android:id="@+id/etMail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="E-mail"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/etPassword"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/etPassword"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+            <EditText
+                android:id="@+id/etBirth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:hint="Birthday"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/etCity"
+                app:layout_constraintTop_toBottomOf="@+id/etCity" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:hint="City"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/etMail"
+                app:layout_constraintTop_toBottomOf="@+id/etMail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:textSize="20sp"
+        android:paddingBottom="2dp"
+        android:id="@+id/btReg"
+        android:paddingTop="2dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/bg_btn_bluegrey"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/cvCredentials"
+        app:layout_constraintLeft_toLeftOf="@id/cvCredentials"
+        app:layout_constraintTop_toBottomOf="@id/cvCredentials"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="Already have an account?"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/btReg"
+        app:layout_constraintRight_toRightOf="@id/btReg"
+        app:layout_constraintTop_toBottomOf="@id/btReg" />
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="Sign In Here!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/txtLogin"
+        app:layout_constraintRight_toRightOf="@id/txtLogin"
+        app:layout_constraintTop_toBottomOf="@id/txtLogin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

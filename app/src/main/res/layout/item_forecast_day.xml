@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:weightSum="4"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+
+    android:background="@drawable/rec_black_border"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+
+        android:textColor="@color/quantum_black_text"
+        android:id="@+id/text_day"
+        android:textSize="16sp"
+        tools:text = "11 April"
+        android:layout_weight="3.8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_day"
+            android:src="@drawable/sun"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/image_night"
+            android:src="@drawable/moon"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:maxEms="3"
+            android:minEms="3"
+            android:layout_gravity="end"
+            android:textSize="16sp"
+            android:textColor="@color/quantum_black_text"
+            tools:text = "12"
+            android:id="@+id/text_day_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:maxEms="3"
+            android:minEms="3"
+            android:layout_gravity="end"
+            android:id="@+id/text_night_temp"
+            android:textSize="16sp"
+            android:textColor="@color/quantum_black_text"
+            tools:text = "1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>

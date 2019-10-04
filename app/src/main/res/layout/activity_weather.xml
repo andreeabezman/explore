@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Weather"
+   >
+
+    <androidx.appcompat.widget.Toolbar
+        android:elevation="12dp"
+        android:id="@+id/toolbar_list"
+        android:background="#21272b"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:text="Weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <Spinner
+        android:padding="4dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rec_black_border"
+        android:entries="@array/temp_options"
+        android:id="@+id/spinner_time"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="24dp"
+        tools:listitem="@layout/item_forecast_day"
+        android:id="@+id/rv_days"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
